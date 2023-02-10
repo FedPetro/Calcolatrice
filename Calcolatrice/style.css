@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background: rgba(75, 75, 75, 0.2);
+}
+
+.titolo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.72vh;
+    margin-bottom: 10.14vh;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.calcolatrice{
+    display: flex;
+    flex-direction: column;
+    height: 67.98vh;
+    width: 50.26vh;
+    background-color: white;
+    box-shadow: 0px 27.42vh 10.99vh rgba(0, 0, 0, 0.03), 0vh 15.36vh 9.28vh rgba(0, 0, 0, 0.1), 0px 64px 64px rgba(0, 0, 0, 0.17), 0vh 1.70vh 3.73vh rgba(0, 0, 0, 0.2), 0vh 0vh 0vh rgba(0, 0, 0, 0.2);
+    border-radius: 4.26vh;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30.3vh;
+    border-radius: 40px;
+    height: auto;
+    margin-top: 2.21vh;
+    margin-right: 4.48vh;
+}
+
+.cronologia {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 1vh;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.20vh;
+}
+
+.uguale-display{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.26vh;
+}
+
+.risultato{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.80vh;
+    align-items: center;
+    text-align: center;
+}
+
+.risultato-display{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.83vh;
+}
+
+.tastiera{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-top: 3.20vh;
+}
+
+.bottoni{
+    display: flex;
+    flex-direction: column;
+}
+
+.operando, .numero_tast, .punto, .delete {
+    width: 8.7vh;
+    height: 7.4vh;
+    background: #D3B4E8;
+    border-width: 0.24vh 0vh 0vh 0.24vh;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 1.2vh 2.24vh 1.06vh rgba(0, 0, 0, 0.03), 0.74vh 1.28vh 0.85vh rgba(0, 0, 0, 0.1), 0.32vh 0.53vh 0.64vh rgba(0, 0, 0, 0.17), 0.10vh 0.10vh 0.32vh rgba(0, 0, 0, 0.2), 0vh 0vh 0vh rgba(0, 0, 0, 0.2);
+    border-radius: 7.4vh;
+}
+
+.numero_tast, .punto{
+    background-color: #F3F3F3;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2vh;
+}
+
+.delete{
+    background: #E0E0E0;
+}
+
+.clear{
+    width: 8.7vh;
+    height: 7.4vh;
+    background: #FDB82D;
+    border-width: 0.24vh 0vh 0vh 0.24vh;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 1.2vh 2.24vh 1.06vh rgba(0, 0, 0, 0.03), 0.74vh 1.28vh 0.85vh rgba(0, 0, 0, 0.1), 0.32vh 0.53vh 0.64vh rgba(0, 0, 0, 0.17), 0.10vh 0.10vh 0.32vh rgba(0, 0, 0, 0.2), 0vh 0vh 0vh rgba(0, 0, 0, 0.2);
+    border-radius: 7.4vh;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2vh;
+}
+
+.file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.file-e-uguale{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.totale{
+    width: 8.75vh;
+    height: 26.68vh;
+    border-width: 0.24vh 0vh 0vh 0.24vh;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 1.2vh 2.24vh 1.06vh rgba(0, 0, 0, 0.03), 0.74vh 1.28vh 0.85vh rgba(0, 0, 0, 0.1), 0.32vh 0.53vh 0.64vh rgba(0, 0, 0, 0.17), 0.10vh 0.10vh 0.32vh rgba(0, 0, 0, 0.2), 0vh 0vh 0vh rgba(0, 0, 0, 0.2);
+    border-radius:  7.4vh;
+    background: #9028DF;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.2vh;
+}
+
+.fila{
+    display: flex;
+    margin-bottom: 2.13vh;
+}
+
+button{
+    margin-right: 2.13vh;
+}
+
+#addizione, .clear, .totale{
+    margin-right: 0%;
+}
+
+.operando{
+    color: #7015B6;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.13vh;
+}
+
+.clear, .totale {
+    color: white;
+}
+
+.operando:hover{
+    background: rgba(211, 180, 232, 0.43);
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.numero_tast:hover, .punto:hover, .delete:hover {
+    background: rgba(243, 243, 243, 0.43);
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.clear:hover{
+    background: rgba(253, 184, 45, 0.43);
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    color: black;
+}
+
+.totale:hover{
+    background: rgba(211, 180, 232, 0.43);
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    color: black;
+}
+
+.delete{
+    margin-right: 0;
+}
+
+
